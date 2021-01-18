@@ -1,0 +1,20 @@
+200~
+
+CC008-if Statement Assignment:
+
+Input:
+
+name = str(input("Enter Your First Name, please: "))
+
+if name == "Sarah" :
+  print("Hello Sarah, the password is : Cohort007")
+  else :
+    print("Hello", name ,"! See you later.")
+
+Output:
+
+Enter Your First Name, please: Sarah
+Hello Sarah, the password is : Cohort007
+
+
+
