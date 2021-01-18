@@ -1,0 +1,51 @@
+Assignment - 007/2 (Covid-19)
+Problem :
+•	Task : Estimating the risk of death from coronavirus. Write a program that;
+•	Takes "Yes" or "No" from the user as an answer to the following questions :
+o	Are you a cigarette addict older than 75 years old? Variable → age
+o	Do you have a severe chronic disease? Variable → chronic
+o	Is your immune system too weak? Variable → immune
+Set a logical algorithm using boolean logic operators (and/or) and use if-statements with the given variables in order to print out us a message : "You are in risky group"(if True ) or "You are not in risky group" (if False).
+Answer:
+Input:
+#age  #a sigarette addict older than 75
+#chronic   #have a chronic disease
+#immune  #immune system to weak
+# risk: There is a risk of death because of covid-19
+
+age = int(input("Enter your age, please: "))
+chronic = input("Are you have a chronic disease? Please answer: Yes/No :")
+immune = input("Is your immune system weak? Please answer: Yes/No :")
+
+if age > 75: 
+  #print("Your age is upper than 75.")
+  if (chronic == "Yes") and (immune == "Yes"):
+    print("You are high risk of death because of covid-19.")
+  elif (chronic == "Yes") and (immune == "No"):
+    print("You are a risk of death because of covid-19.")
+  elif (chronic == "No") and (immune == "Yes"):
+    print("You are a risk of death because of covid-19.")
+  else:
+    print("You are a low risk of death because of covid-19.")
+
+elif age < 75:
+  #print("Your age is lower than 75.")
+  if (chronic == "Yes") and (immune == "Yes"):
+    print("You are a risk of death because of covid-19.")
+  elif (chronic == "No") and (immune == "Yes"):
+    print("You are a low risk of death because of covid-19.")
+  else:
+    print("You are not a risk of death because of covid-19.")
+
+else:
+    print("You are not a risk of death because of covid-19.")
+
+Output:
+Enter your age, please: 16
+Are you have a chronic disease? Please answer: Yes/No :No
+Is your immune system weak? Please answer: Yes/No :No
+You are not a risk of death because of covid-19.
+
+ 
+
+
