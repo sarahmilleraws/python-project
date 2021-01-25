@@ -1,0 +1,38 @@
+Assignment CC-007/4 (Is it an Prime Number?)
+
+
+Solution_1:
+Input:
+number = int(input("Enter a number: "))
+ 
+ prime= [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+ if number in prime:
+   print("it is prime number")
+   else:
+     print("it is not prime number")
+ 
+ Output:
+ Enter a number: 32
+ it is not prime number
+
+ Solution_2:
+ 
+ Input:
+ num= int(input("Enter a number: "))
+
+if num > 1:
+
+  for i in range(2, num):
+    if (num % i == 0 or num % 2 == 0):
+      print(num, "is not a prime number")
+      break
+    else:
+      print(num, "is a prime number")
+      break
+
+ Output:
+
+Enter a number: 8
+8 is not a prime number
+
