@@ -1,0 +1,20 @@
+CC007/5 Python Assignment
+Fibonacci Numbers Solution:
+
+Input:
+f1 = 0
+f2 = 1
+n=11
+
+if (n < 1):
+  print(f1, end=" ")
+for x in range(1, n):
+  print(f2, end=" ")
+  next = f1 + f2
+  f1 = f2
+  f2 = next
+
+Output:
+1 1 2 3 5 8 13 21 34 55 
+
+
